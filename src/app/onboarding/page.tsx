@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/nextjs';
 import { Heart, Users, CheckCircle, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import GiveGuardLogo from '@/assets/GiveGuard_logo.png';
 
 function OnboardingContent() {
   const [selectedRoles, setSelectedRoles] = useState<{
